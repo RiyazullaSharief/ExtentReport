@@ -66,7 +66,8 @@ public class ExtentReportWithScreenShot
 	{
 		TakesScreenshot screen=(TakesScreenshot)driver;
 		File src=screen.getScreenshotAs(OutputType.FILE);
-		//String dest="./screenshots/"+getcurrentdateandtime()+".png";
+		//String dest="./screenshots/"+getcurrentdateandtime()+".png"; ///It Doesn't work
+		///(Only Absolute path works, Not Relative Path...)
 		String dest="C:/Users/Family/eclipse-workspace/ExtentReport/screenshots/"+getcurrentdateandtime()+".png";
 		File target=new File(dest);
 		FileUtils.copyFile(src,target);
