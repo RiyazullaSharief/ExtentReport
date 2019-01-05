@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35690" started-at="2019-01-05T19:52:48Z" finished-at="2019-01-05T19:53:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35690" started-at="2019-01-05T19:52:48Z" finished-at="2019-01-05T19:53:24Z">
+      <class name="extentReport.ExtentReportWithScreenShot">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:extentReport.ExtentReportWithScreenShot@feb982]" name="beforetest" is-config="true" duration-ms="2670" started-at="2019-01-05T19:52:48Z" finished-at="2019-01-05T19:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:extentReport.ExtentReportWithScreenShot@feb982]" name="beforemethod" is-config="true" duration-ms="281" started-at="2019-01-05T19:52:51Z" finished-at="2019-01-05T19:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:extentReport.ExtentReportWithScreenShot@feb982]" name="testcase2" duration-ms="31430" started-at="2019-01-05T19:52:51Z" finished-at="2019-01-05T19:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:extentReport.ExtentReportWithScreenShot@feb982]" name="aftertest" is-config="true" duration-ms="1009" started-at="2019-01-05T19:53:23Z" finished-at="2019-01-05T19:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- extentReport.ExtentReportWithScreenShot -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
