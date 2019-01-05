@@ -39,15 +39,15 @@ public class ExtentReportWithScreenShot
 	}
 
 	@Test
-	public void testcase2()
+	public void testcase()
 	{
-		log=report.createTest("testcase2");
+		log=report.createTest("testcase");
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		try
 		{
-			log.log(Status.INFO, "Google Page opened"+log.addScreenCaptureFromPath(captureScreen()));
-			log.log(Status.PASS, "Passed test 2"+log.addScreenCaptureFromPath(captureScreen()));
+			log.log(Status.INFO, "Google Page opened "+log.addScreenCaptureFromPath(captureScreen()));
+			log.log(Status.PASS, "Passed test "+log.addScreenCaptureFromPath(captureScreen()));
 		}
 		catch (Exception e)
 		{
@@ -66,7 +66,7 @@ public class ExtentReportWithScreenShot
 	{
 		TakesScreenshot screen=(TakesScreenshot)driver;
 		File src=screen.getScreenshotAs(OutputType.FILE);
-		//String dest="C:/Users/Family/eclipse-workspace/ExtentReport/screenshots/"+"google.png";
+		//String dest="./screenshots/"+getcurrentdateandtime()+".png";
 		String dest="C:/Users/Family/eclipse-workspace/ExtentReport/screenshots/"+getcurrentdateandtime()+".png";
 		File target=new File(dest);
 		FileUtils.copyFile(src,target);
