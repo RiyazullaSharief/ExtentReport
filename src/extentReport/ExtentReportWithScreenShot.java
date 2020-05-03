@@ -70,7 +70,9 @@ public class ExtentReportWithScreenShot
 		///(Only Absolute path works, Not Relative Path...)
 		String dest="C:/Users/Family/eclipse-workspace/ExtentReport/screenshots/"+getcurrentdateandtime()+".png";
 		File target=new File(dest);
-		FileUtils.copyFile(src,target);
+		// FileUtils.copyFile(src,target); //Works for older version of selenium like "selenium-server-standalone-3.14.0"
+		//For new version of selenium like "selenium-server-standalone-3.141.59" use the below line.
+		FileHandler.copy(src, target);
 		return dest;
 	}
 
